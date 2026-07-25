@@ -58,13 +58,6 @@ The dataset contains four positive emotions, four negative emotions, and one neu
 | **Negative** | Anger, Disgust, Fear, Sadness |
 | **Neutral** | Neutral |
 
-### Official Resources
-
-- **Dataset access:** [FACED Dataset on Synapse](https://doi.org/10.7303/syn50614194)
-- **Dataset paper:** [A Large Finer-grained Affective Computing EEG Dataset](https://www.nature.com/articles/s41597-023-02650-w)
-
-> The dataset files are not redistributed through this repository. Users must obtain the data from the official source and comply with its access conditions and licensing requirements.
-
 ---
 
 ## Research Objective
