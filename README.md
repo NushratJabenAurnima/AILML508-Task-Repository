@@ -8,11 +8,16 @@
 
 ## Project Overview
 
-This repository contains the implementation and documentation of the **Group 09 course project** for **CSE521/AIML508: Machine Learning, Summer 2026**.
+This repository contains the implementation, reports, related work, and model artifacts for the **Group 09 course project** in **CSE521/AIML508: Machine Learning, Summer 2026**.
 
-The project uses the **Finer-grained Affective Computing EEG Dataset (FACED)** to investigate EEG-based emotion recognition using machine-learning baselines and graph neural networks.
+The project uses the **Finer-grained Affective Computing EEG Dataset (FACED)** to investigate EEG-based emotion recognition using classical machine-learning baselines and graph neural networks.
 
-The work is organized into four stages: exploratory data analysis and literature review, baseline and proposed-model development, model improvement and explainability, and preparation of the final IEEE-format report.
+The work is organized into four stages:
+
+1. Dataset exploration, related-work analysis, and research-gap identification  
+2. Baseline-model development, graph construction, and proposed GNN design  
+3. Model improvement, ablation, cross-validation, statistical testing, and explainability  
+4. Preparation of the final IEEE journal-format report  
 
 ---
 
@@ -21,7 +26,8 @@ The work is organized into four stages: exploratory data analysis and literature
 | Item | Description |
 |---|---|
 | **Group** | Group 09 |
-| **Dataset** | Finer-grained Affective Computing EEG Dataset (FACED) |
+| **Dataset** | Finer-grained Affective Computing EEG Dataset |
+| **Dataset Abbreviation** | FACED |
 | **Application Area** | EEG-based emotion recognition |
 | **Track** | Track 1 — Graph Neural Network on Table-Style EEG Data |
 | **Problem Type** | Multiclass emotion classification |
@@ -34,23 +40,25 @@ The work is organized into four stages: exploratory data analysis and literature
 
 ## FACED Dataset
 
-FACED is a large-scale EEG dataset developed for fine-grained affective computing and cross-subject emotion-recognition research.
+This project uses the **Finer-grained Affective Computing EEG Dataset (FACED)** for EEG-based emotion recognition.
+
+FACED contains EEG recordings from **123 participants**, collected using **32 EEG channels** while participants watched **28 emotion-elicitation video clips** representing **nine emotion categories**.
+
+The dataset provides raw EEG recordings, preprocessed EEG signals, self-reported emotional ratings, and extracted features such as Differential Entropy and Power Spectral Density.
 
 ### Dataset Summary
 
-- **123 subjects**
+- **123 participants**
 - **32 EEG channels**
 - **28 emotion-elicitation video clips**
 - **9 emotion categories**
 - Raw EEG recordings
 - Preprocessed EEG signals
-- Differential Entropy (DE) features
-- Power Spectral Density (PSD) features
+- Differential Entropy features
+- Power Spectral Density features
 - Self-reported emotional ratings
 
 ### Emotion Categories
-
-The dataset contains four positive emotions, four negative emotions, and one neutral category:
 
 | Emotion Group | Categories |
 |---|---|
@@ -58,22 +66,30 @@ The dataset contains four positive emotions, four negative emotions, and one neu
 | **Negative** | Anger, Disgust, Fear, Sadness |
 | **Neutral** | Neutral |
 
+### Official Sources
+
+- **Official Dataset Repository:** [FACED on Synapse](https://www.synapse.org/Synapse:syn50614194)
+- **Dataset DOI:** [10.7303/syn50614194](https://doi.org/10.7303/syn50614194)
+- **Original Dataset Paper:** [A Large Finer-grained Affective Computing EEG Dataset](https://www.nature.com/articles/s41597-023-02650-w)
+
+> The FACED dataset is not redistributed through this repository. Users must obtain it from the official source and follow its access and usage conditions.
+
 ---
 
 ## Research Objective
 
 The primary objective of this project is to develop a leakage-free and interpretable framework for EEG-based emotion recognition using the FACED dataset.
 
-The project will:
+The project aims to:
 
 1. Explore the structure, quality, and statistical properties of the FACED EEG features.
 2. Establish classical machine-learning and neural-network baselines.
 3. Construct a meaningful EEG graph using channels as nodes and justified relationships as edges.
-4. Develop a graph neural network for emotion classification.
+4. Develop a graph neural network for multiclass emotion classification.
 5. Evaluate whether graph-based modeling improves performance over non-graph baselines.
-6. Examine model stability using subject-grouped cross-validation.
+6. Measure model stability using subject-grouped cross-validation.
 7. Interpret model decisions using explainable-AI techniques.
-8. Compare the final model fairly with relevant published work.
+8. Compare the final model fairly with relevant published studies.
 
 ---
 
@@ -127,7 +143,7 @@ Group09_FACED_ML/
     └── supporting_model_files/
 ```
 
-Files for future tasks will be added after the corresponding experiments are completed.
+> Files listed under Tasks 2–4 and the `models/` directory represent the planned final repository structure. They will be added after the corresponding work is completed.
 
 ---
 
@@ -183,20 +199,12 @@ Representative baseline models may include:
 The proposed graph neural network will define:
 
 - **Nodes:** EEG channels or electrodes
-- **Node features:** EEG-derived features such as DE or PSD
+- **Node features:** EEG-derived features such as Differential Entropy or Power Spectral Density
 - **Edges:** Functional, statistical, spatial, or hybrid relationships between EEG channels
 - **Edge weights:** Strength of the selected channel relationships
-- **Readout:** Graph-level representation for emotion classification
+- **Readout:** Graph-level representation used for emotion classification
 
 The graph-construction method will be justified experimentally rather than assumed to be beneficial.
-
-### Planned Task 2 Files
-
-```text
-code/task2/Group09_FACED_task2_baselines.ipynb
-code/task2/Group09_FACED_task2_proposed_model.ipynb
-report/task2/Group09_FACED_task2_report.pdf
-```
 
 ---
 
@@ -220,14 +228,6 @@ Task 3 will focus on improving and validating the proposed model.
 - LIME analysis
 - Analysis of correctly and incorrectly classified samples
 
-### Planned Task 3 Files
-
-```text
-code/task3/Group09_FACED_task3_improvement_ablation.ipynb
-code/task3/Group09_FACED_task3_explainability.ipynb
-report/task3/Group09_FACED_task3_report.pdf
-```
-
 ---
 
 ## Task 4 — Final Report
@@ -245,7 +245,7 @@ The final report will be written in **IEEE journal format** and will consolidate
 7. Conclusion
 8. References
 
-The report will include:
+The final report will include:
 
 - Dataset and preprocessing details
 - Leakage-prevention safeguards
@@ -257,122 +257,32 @@ The report will include:
 - Explainability findings
 - Limitations and future work
 
-### Planned Final Report
-
-```text
-report/task4/Group09_FACED_final_report.pdf
-```
-
----
-
-## Evaluation Strategy
-
-The models will be evaluated using:
-
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Macro-F1
-- Weighted-F1
-- Per-class recall
-- Confusion matrix
-- ROC-AUC
-- Precision–Recall curves
-- Training time
-- Cross-validation mean and standard deviation
-
-On imbalanced multiclass data, **Macro-F1 and per-class recall** will receive greater emphasis than accuracy alone.
-
----
-
-## Data-Integrity and Leakage Prevention
-
-FACED contains multiple samples from the same subjects. A random row-level split could allow the model to learn subject-specific patterns rather than emotion-related patterns.
-
-The following safeguards will therefore be applied:
-
-- Subject-independent training and testing
-- No subject overlap between training, validation, and test sets
-- Subject-grouped cross-validation
-- Preprocessing fitted using training data only
-- Feature selection performed using training data only
-- Imbalance handling applied to training data only
-- Graph construction performed after data splitting
-- Test data excluded from model selection and hyperparameter tuning
-
-These safeguards are essential for producing honest and generalizable results.
-
----
-
-## Reproducibility
-
-To support reproducibility, the repository will document:
-
-- Dataset acquisition
-- Selected FACED data files
-- Data-loading procedures
-- Label definitions
-- Subject identifiers
-- Preprocessing steps
-- Graph-construction procedure
-- Random seeds
-- Train, validation, and test strategy
-- Model architecture
-- Hyperparameters
-- Evaluation metrics
-- Cross-validation procedure
-- Statistical-test configuration
-
----
-
-## Running the Project
-
-Clone the repository:
-
-```bash
-git clone https://github.com/NushratJabenAurnima/Group09_FACED_ML.git
-cd Group09_FACED_ML
-```
-
-Open the Task 1 notebook:
-
-```text
-code/task1/Group09_FACED_task1_eda.ipynb
-```
-
-Run the notebook cells sequentially to reproduce the available exploratory analysis.
-
-Task 2 and Task 3 execution instructions will be added after their implementations are finalized.
-
 ---
 
 ## Contributors
 
 ### Nushrat Jaben Aurnima
 
-- Project contributor
+- Project co-author
 - GitHub: [@NushratJabenAurnima](https://github.com/NushratJabenAurnima)
 
 ### Shairin Akter Hashi
 
-- Project contributor and co-author
+- Project co-author
 - GitHub: [@Shairin207](https://github.com/Shairin207)
 
 Both contributors participate in the research, implementation, analysis, documentation, and preparation of the final report.
 
 ---
 
-## FACED Dataset
+## License
 
-This project uses the **Finer-grained Affective Computing EEG Dataset (FACED)** for EEG-based emotion recognition. The dataset contains EEG recordings from **123 participants**, collected using **32 EEG channels** while participants watched **28 emotion-elicitation video clips** representing **nine emotion categories**.
+This repository is distributed under the terms of the [GNU General Public License v3.0](LICENSE).
 
-The dataset provides raw EEG recordings, preprocessed EEG data, self-reported ratings, and extracted features such as Differential Entropy (DE) and Power Spectral Density (PSD). :contentReference[oaicite:0]{index=0}
+The FACED dataset is governed by its own access and usage conditions and is not covered by this repository’s software license.
 
-## Official Dataset Sources
+---
 
-- **Official FACED Dataset:** [Synapse Repository](https://www.synapse.org/Synapse:syn50614194)
-- **Dataset DOI:** [https://doi.org/10.7303/syn50614194](https://doi.org/10.7303/syn50614194)
-- **Original Dataset Paper:** [A Large Finer-grained Affective Computing EEG Dataset](https://www.nature.com/articles/s41597-023-02650-w)
+## Acknowledgement
 
-> The FACED dataset is not redistributed in this repository. Users must obtain it from the official Synapse source and follow its access and usage conditions.g
+We acknowledge the creators of the FACED dataset and the authors of the related studies used to support this project.
