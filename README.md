@@ -168,15 +168,6 @@ Task 1 focuses on understanding the FACED dataset, assessing its quality, and id
 - Identification of limitations and research gaps
 - Motivation for graph-based EEG modeling
 
-### Task 1 Files
-
-| Deliverable | Location |
-|---|---|
-| **EDA Notebook** | `code/task1/Group09_FACED_task1_eda.ipynb` |
-| **Task 1 Report** | `report/task1/Group09_FACED_task1_report.pdf` |
-| **Related-Work Table** | `related_work/Group09_FACED_related_work_table.pdf` |
-| **Reviewed Papers** | `related_work/papers/` |
-
 ---
 
 ## Task 2 — Baselines and Proposed GNN
