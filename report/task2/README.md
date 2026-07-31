@@ -6,8 +6,6 @@ Two baseline reproduction reports must be added.
 
 ## 1. MSGM Reproduction
 
-- **Reproduction Report:** [Group09_FACED_MSGM_reproduction_report.pdf](./Group09_FACED_MSGM_reproduction_report.pdf)
-
 - **Main Reproduction Notebook:** [faced-msgm.ipynb](../../code/task2/baselines/MSGM/faced-msgm.ipynb)
 
 - **Resume/Checkpoint Notebook:** [faced-msgm-ckptr.ipynb](../../code/task2/baselines/MSGM/faced-msgm-ckptr.ipynb)
@@ -15,8 +13,6 @@ Two baseline reproduction reports must be added.
 - **Official GitHub Repository:** [MSGMrepo](https://github.com/liuguangyunjizero/MSGMrepo)
 
 - **Official Paper:** [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1665145/full)
-
-- **DOI:** [10.3389/fnins.2026.1665145](https://doi.org/10.3389/fnins.2026.1665145)
 
 ## 2. Second Baseline Reproduction
 
