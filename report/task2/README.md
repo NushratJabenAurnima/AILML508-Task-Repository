@@ -2,17 +2,28 @@
 
 This folder contains the baseline reproduction reports prepared for **Task 2** using the FACED EEG dataset.
 
-Two baseline reproduction reports must be added:
+Two baseline reproduction reports must be added.
 
-1. **MSGM Reproduction Report**
-   - File: `Group09_FACED_MSGM_reproduction_report.pdf`
-   - Official GitHub repository: https://github.com/liuguangyunjizero/MSGMrepo
-   - Official paper: https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1665145/full
-   - DOI: https://doi.org/10.3389/fnins.2026.1665145
+## 1. MSGM Reproduction
 
-2. **Second Baseline Reproduction Report**
-   - The second baseline report will be added after its reproduction and evaluation are completed.
+- **Reproduction Report:**  
+  [Group09_FACED_MSGM_reproduction_report.pdf](./Group09_FACED_MSGM_reproduction_report.pdf)
 
-The final consolidated Task 2 report will also be added as:
+- **Main Reproduction Notebook:**  
+  [faced-msgm.ipynb](../../code/task2/baselines/MSGM/faced-msgm.ipynb)
 
-- `Group09_FACED_task2_report.pdf`
+- **Resume/Checkpoint Notebook:**  
+  [faced-msgm-ckptr.ipynb](../../code/task2/baselines/MSGM/faced-msgm-ckptr.ipynb)
+
+- **Official GitHub Repository:**  
+  [MSGMrepo](https://github.com/liuguangyunjizero/MSGMrepo)
+
+- **Official Paper:**  
+  [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1665145/full)
+
+- **DOI:**  
+  [10.3389/fnins.2026.1665145](https://doi.org/10.3389/fnins.2026.1665145)
+
+## 2. Second Baseline Reproduction
+
+The second baseline report and its corresponding reproduction notebooks will be added after the reproduction and evaluation are completed.
