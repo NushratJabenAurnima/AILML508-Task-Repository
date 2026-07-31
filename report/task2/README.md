@@ -2,8 +2,6 @@
 
 This folder contains the baseline reproduction reports prepared for **Task 2** using the FACED EEG dataset.
 
-Two baseline reproduction reports must be added.
-
 ## 1. MSGM Reproduction
 
 - **Main Reproduction Notebook:** [faced-msgm.ipynb](../../code/task2/baselines/MSGM/faced-msgm.ipynb)
