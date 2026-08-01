@@ -8,7 +8,7 @@ This folder contains the baseline reproduction reports prepared for **Task 2** u
 
 - **Resume/Checkpoint Notebook:** [faced-msgm-ckptr.ipynb](../../code/task2/baselines/MSGM/faced-msgm-ckptr.ipynb)
 
-- **Official GitHub Repository:** [MSGMrepo](https://github.com/liuguangyunjizero/MSGMrepo)
+- **Official GitHub Repository:** [MSGMrepo](https://github.com/liuguangyunjizero/MSGM)
 
 - **Official Paper:** [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1665145/full)
 
