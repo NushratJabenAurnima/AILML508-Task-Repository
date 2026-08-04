@@ -14,4 +14,11 @@ This folder contains the baseline reproduction reports prepared for **Task 2** u
 
 ## 2. Second Baseline Reproduction
 
-The second baseline report and its corresponding reproduction notebooks will be added after the reproduction and evaluation are completed.
+
+- **DGNN/RGNN/SparseDGNN Reproduction Notebook:** [DGNN/RGNN/SparseDGNN NoteBook](https://github.com/NushratJabenAurnima/Group09_FACED_ML/tree/main/code/task2/baselines/GNN4EEG/DGNN)
+
+- **HetEmotionNet Notebook:** [HetEmotionNet Notebook](https://github.com/NushratJabenAurnima/Group09_FACED_ML/tree/main/code/task2/baselines/GNN4EEG/Het%20EmotionNet)
+
+- **Official GitHub Repository:** [GNN4EEG](https://github.com/Miracle-2001/GNN4EEG)
+
+- **Official Paper:** [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.researchgate.net/publication/384662989_GNN4EEG_A_Benchmark_and_Toolkit_for_Electroencephalography_Classification_with_Graph_Neural_Network)
