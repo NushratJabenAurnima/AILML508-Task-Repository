@@ -12,7 +12,7 @@ This folder contains the baseline reproduction reports prepared for **Task 2** u
 
 - **Official Paper:** [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1665145/full)
 
-## 2. Second Baseline Reproduction
+## 2. GNN4EEG Reproductio
 
 
 - **DGNN/RGNN/SparseDGNN Reproduction Notebook:** [DGNN/RGNN/SparseDGNN NoteBook](https://github.com/NushratJabenAurnima/Group09_FACED_ML/tree/main/code/task2/baselines/GNN4EEG/DGNN)
