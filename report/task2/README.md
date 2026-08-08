@@ -21,4 +21,4 @@ This folder contains the baseline reproduction reports prepared for **Task 2** u
 
 - **Official GitHub Repository:** [GNN4EEG](https://github.com/Miracle-2001/GNN4EEG)
 
-- **Official Paper:** [Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition](https://www.researchgate.net/publication/384662989_GNN4EEG_A_Benchmark_and_Toolkit_for_Electroencephalography_Classification_with_Graph_Neural_Network)
+- **Official Paper:** [GNN4EEG: A Benchmark and Toolkit for Electroencephalography Classification with Graph Neural Network](https://www.researchgate.net/publication/384662989_GNN4EEG_A_Benchmark_and_Toolkit_for_Electroencephalography_Classification_with_Graph_Neural_Network)
